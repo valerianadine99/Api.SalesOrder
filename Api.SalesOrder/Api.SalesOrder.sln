@@ -3,17 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.SalesOrder.API", "Api.SalesOrder.API.csproj", "{81C185F7-A404-435D-AF0B-6C0226DC71B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.SalesOrder.API", "Api.SalesOrder.API.csproj", "{81C185F7-A404-435D-AF0B-6C0226DC71B4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F8441B81-EFCB-49E5-A2E3-081745078C30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.SalesOrder.Application", "..\Api.SalesOrder.Application\Api.SalesOrder.Application.csproj", "{00B045C9-2499-452B-92EC-604A7BFC0537}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.SalesOrder.Application", "..\Api.SalesOrder.Application\Api.SalesOrder.Application.csproj", "{00B045C9-2499-452B-92EC-604A7BFC0537}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.SalesOrder.Domain", "..\Api.SalesOrder.Domain\Api.SalesOrder.Domain.csproj", "{4AAA702B-2EB1-4CA5-9709-8C624DB716B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.SalesOrder.Domain", "..\Api.SalesOrder.Domain\Api.SalesOrder.Domain.csproj", "{4AAA702B-2EB1-4CA5-9709-8C624DB716B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.SalesOrder.Infrastructure", "..\Api.SalesOrder.Infrastructure\Api.SalesOrder.Infrastructure.csproj", "{86ACB3F2-0412-4B46-A322-866E3D742037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.SalesOrder.Infrastructure", "..\Api.SalesOrder.Infrastructure\Api.SalesOrder.Infrastructure.csproj", "{86ACB3F2-0412-4B46-A322-866E3D742037}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.SalesOrder.SharedKernel", "..\Api.SalesOrder.SharedKernel\Api.SalesOrder.SharedKernel.csproj", "{05B7ED37-3199-421E-886D-16ED9C8768B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.SalesOrder.SharedKernel", "..\Api.SalesOrder.SharedKernel\Api.SalesOrder.SharedKernel.csproj", "{05B7ED37-3199-421E-886D-16ED9C8768B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Legacy", "Legacy", "{11E03547-DEA8-451F-9F8C-2325865C1485}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFService", "..\WCFService\", "{A2E2CB21-8DC9-465F-B2C6-DB32E752206C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56187"
+		Debug.AspNetCompiler.PhysicalPath = "..\WCFService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56187\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56187"
+		Release.AspNetCompiler.PhysicalPath = "..\WCFService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56187\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56187"
+		SlnRelativePath = "..\WCFService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService", "..\WindowsService\WindowsService.csproj", "{4E64CE41-BE77-4CB4-B848-6031F3EDB592}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +67,14 @@ Global
 		{05B7ED37-3199-421E-886D-16ED9C8768B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05B7ED37-3199-421E-886D-16ED9C8768B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05B7ED37-3199-421E-886D-16ED9C8768B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E2CB21-8DC9-465F-B2C6-DB32E752206C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E2CB21-8DC9-465F-B2C6-DB32E752206C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E2CB21-8DC9-465F-B2C6-DB32E752206C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E2CB21-8DC9-465F-B2C6-DB32E752206C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4E64CE41-BE77-4CB4-B848-6031F3EDB592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E64CE41-BE77-4CB4-B848-6031F3EDB592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E64CE41-BE77-4CB4-B848-6031F3EDB592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E64CE41-BE77-4CB4-B848-6031F3EDB592}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +85,9 @@ Global
 		{4AAA702B-2EB1-4CA5-9709-8C624DB716B0} = {F8441B81-EFCB-49E5-A2E3-081745078C30}
 		{86ACB3F2-0412-4B46-A322-866E3D742037} = {F8441B81-EFCB-49E5-A2E3-081745078C30}
 		{05B7ED37-3199-421E-886D-16ED9C8768B0} = {F8441B81-EFCB-49E5-A2E3-081745078C30}
+		{11E03547-DEA8-451F-9F8C-2325865C1485} = {F8441B81-EFCB-49E5-A2E3-081745078C30}
+		{A2E2CB21-8DC9-465F-B2C6-DB32E752206C} = {11E03547-DEA8-451F-9F8C-2325865C1485}
+		{4E64CE41-BE77-4CB4-B848-6031F3EDB592} = {11E03547-DEA8-451F-9F8C-2325865C1485}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04EEF289-4AF4-4D63-BA7E-20EC95B5AA0D}

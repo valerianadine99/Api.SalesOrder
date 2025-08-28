@@ -10,7 +10,7 @@ namespace Api.SalesOrder.API.Controllers
     {
         private readonly IJwtService _jwtService;
 
-        // Mock users for demonstration
+        // Mock users for demonstration, this shoould be in tables for managment but thats not the purpose of the test
         private readonly Dictionary<string, (string Password, string Role, string userId)> _users = new()
         {
             { "admin@logistics.com", ("admin123", "Admin", "d900e318-e9ae-427e-8e22-15aa53060f22") },
