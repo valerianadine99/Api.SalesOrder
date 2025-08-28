@@ -13,8 +13,8 @@ namespace Api.SalesOrder.API.Controllers
         // Mock users for demonstration
         private readonly Dictionary<string, (string Password, string Role, string userId)> _users = new()
         {
-            { "admin", ("admin123", "Admin", "d900e318-e9ae-427e-8e22-15aa53060f22") },
-            { "vendedor", ("vendedor123", "Vendedor", "4471cf7b-42bd-4520-914d-e860a70572dd") }
+            { "admin@logistics.com", ("admin123", "Admin", "d900e318-e9ae-427e-8e22-15aa53060f22") },
+            { "user@logistics.com", ("vendedor123", "Vendedor", "4471cf7b-42bd-4520-914d-e860a70572dd") }
         };
 
         public AuthController(IJwtService jwtService)
